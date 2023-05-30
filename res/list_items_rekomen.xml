@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_rekomendasi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="right"
+            android:background="@color/white"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="TKR"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/orange"
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Please add your group member"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/layoutName"
+            android:layout_alignStart="@+id/layoutName"
+            android:layout_below="@+id/layoutName"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:textSize="15sp"
+            android:weightSum="3">
+        <TextView
+            android:id="@+id/namajalan"
+            android:layout_weight="1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="Before adding group members, please first fill in the details of your internship place."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+
+            android:textStyle="bold"
+            android:id="@+id/type"
+            android:textColor="@color/orange"
+            android:text="KM"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:text="KM"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:maxLength="2"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
